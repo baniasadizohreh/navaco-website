@@ -1,0 +1,11 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="1000" rx="180" fill="#111111"/>
+  <rect x="270" y="130" width="460" height="460" rx="110" stroke="#D6C39A" stroke-width="20"/>
+  <path d="M395 485V235L605 485V235" stroke="#D6C39A" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="500" y="760" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="95"
+        font-weight="700"
+        letter-spacing="16"
+        fill="#F7F3EA">NAVACO</text>
+</svg>
