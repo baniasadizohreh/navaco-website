@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
-  basePath: "/navaco-website",
-  assetPrefix: "/navaco-website/",
+
+  basePath: isGithubPages ? "/navaco-website" : "",
+  assetPrefix: isGithubPages ? "/navaco-website/" : "",
+
   images: {
     unoptimized: true,
   },
