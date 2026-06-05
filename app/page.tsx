@@ -29,48 +29,65 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative flex min-h-screen items-center overflow-hidden px-6 py-28 text-center">
+      <header className="absolute left-0 right-0 top-0 z-30">
+        <div className="mx-auto flex max-w-6xl justify-end px-6 py-6">
+          <a
+            href="mailto:navacolu@gmail.com"
+            className="rounded-full border border-[#D6C39A]/40 bg-black/25 px-6 py-2 text-sm text-[#D6C39A] backdrop-blur-md transition hover:bg-[#D6C39A] hover:text-[#080706]"
+          >
+            Contact
+          </a>
+        </div>
+      </header>
+
+      <section className="relative min-h-[92vh] overflow-hidden">
         <Image
           src="/navaco-banner.png"
           alt="NAVACO governance, resilience and AI background"
           fill
           priority
-          className="object-cover object-center opacity-45"
+          className="object-cover object-center"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/65 via-[#080706]/72 to-[#080706]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080706]/85 via-[#080706]/25 to-[#080706]/75" />
+        <div className="absolute inset-0 bg-black/35" />
 
-        <div className="relative z-10 mx-auto max-w-5xl pt-16">
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#D6C39A]">
-            Governance • Operational Resilience • AI
-          </p>
+        <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-b from-transparent via-[#080706]/80 to-[#080706]" />
 
-          <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
-            Turning complexity into
-            <span className="text-[#D6C39A]"> confident decisions.</span>
-          </h1>
+        <div className="relative z-10 flex min-h-[92vh] items-center justify-center px-6 pt-24 text-center">
+          <div className="mx-auto max-w-5xl">
+            {/* <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#D6C39A]">
+        Governance • Operational Resilience • AI
+      </p>
 
-          <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-[#D8D1C3] md:text-lg">
-            NAVACO SARL supports financial institutions and regulated
-            organisations in strengthening governance, operational resilience,
-            cybersecurity, regulatory readiness and responsible AI adoption.
-          </p>
+      <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-tight text-[#F7F3EA] md:text-6xl">
+        Turning complexity into
+        <span className="text-[#D6C39A]"> confident decisions.</span>
+      </h1> */}
 
-          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href="mailto:navacolu@gmail.com"
-              className="rounded-full bg-[#D6C39A] px-7 py-3 font-semibold text-[#080706] transition hover:bg-[#E8D7B0]"
-            >
-              Start a conversation
-            </a>
+            <div className="absolute bottom-20 left-1/2 w-full max-w-4xl -translate-x-1/2 px-6">
+              <p className="mx-auto text-center text-sm leading-9 text-[#D8D1C3] md:text-base">
+                NAVACO SARL supports financial institutions and regulated organisations
+                in strengthening governance, operational resilience, cybersecurity,
+                regulatory readiness and responsible AI adoption.
+              </p>
+            
 
-            <a
-              href="#services"
-              className="rounded-full border border-[#D6C39A]/30 px-7 py-3 font-semibold text-[#F7F3EA] transition hover:bg-white/5"
-            >
-              View services
-            </a>
+            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+              <a
+                href="mailto:navacolu@gmail.com"
+                className="rounded-full bg-[#D6C39A] px-7 py-3 font-semibold text-[#080706] transition hover:bg-[#E8D7B0]"
+              >
+                Start a conversation
+              </a>
+
+              <a
+                href="#services"
+                className="rounded-full border border-[#D6C39A]/30 bg-black/20 px-7 py-3 font-semibold text-[#F7F3EA] backdrop-blur-md transition hover:bg-white/5"
+              >
+                View services
+              </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
