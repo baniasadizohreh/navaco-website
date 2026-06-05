@@ -1,4 +1,5 @@
 import Image from "next/image";
+const basePath = process.env.NODE_ENV === "production" ? "/navaco-website" : "";
 
 const services = [
   {
@@ -42,7 +43,7 @@ export default function Home() {
 
       <section className="relative min-h-[92vh] overflow-hidden">
         <Image
-          src="/navaco-banner.png"
+          src={`${basePath}/navaco-banner.png`}
           alt="NAVACO governance, resilience and AI background"
           fill
           priority
