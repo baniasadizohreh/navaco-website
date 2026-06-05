@@ -17,72 +17,75 @@ const services = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-stone-950 text-stone-100">
-      <header className="border-b border-white/5">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <Image
-            src="/navaco-logo.svg"
-            alt="NAVACO SARL"
-            width={260}
-            height={82}
-            priority
-          />
-
+    <main className="min-h-screen bg-[#080706] text-[#F7F3EA]">
+      <header className="absolute left-0 right-0 top-0 z-20">
+        <div className="mx-auto flex max-w-6xl items-center justify-end px-6 py-8">
           <a
             href="mailto:navacolu@gmail.com"
-            className="rounded-full border border-amber-200/30 px-5 py-2 text-sm text-amber-200 transition hover:bg-amber-200 hover:text-stone-950"
+            className="rounded-full border border-[#D6C39A]/40 px-6 py-2 text-sm text-[#D6C39A] transition hover:bg-[#D6C39A] hover:text-[#080706]"
           >
             Contact
           </a>
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-amber-200">
-          Governance • Operational Resilience • AI
-        </p>
+      <section className="relative flex min-h-screen items-center overflow-hidden px-6 py-28 text-center">
+        <Image
+          src="/navaco-banner.png"
+          alt="NAVACO governance, resilience and AI background"
+          fill
+          priority
+          className="object-cover object-center opacity-45"
+        />
 
-        <h1 className="mx-auto max-w-4xl text-3xl font-semibold leading-tight md:text-5xl">
-          Helping organisations navigate
-          <span className="text-amber-200"> technology, governance </span>
-          and
-          <span className="text-orange-300"> AI transformation.</span>
-        </h1>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/65 via-[#080706]/72 to-[#080706]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080706]/85 via-[#080706]/25 to-[#080706]/75" />
 
-        <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-stone-300 md:text-lg">
-          NAVACO SARL supports financial institutions and regulated
-          organisations in strengthening governance, operational resilience,
-          cybersecurity, regulatory readiness and responsible AI adoption.
-        </p>
+        <div className="relative z-10 mx-auto max-w-5xl pt-16">
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#D6C39A]">
+            Governance • Operational Resilience • AI
+          </p>
 
-        <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-          <a
-            href="mailto:navacolu@gmail.com"
-            className="rounded-full bg-amber-200 px-7 py-3 font-semibold text-stone-950 transition hover:bg-amber-100"
-          >
-            Start a conversation
-          </a>
+          <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
+            Turning complexity into
+            <span className="text-[#D6C39A]"> confident decisions.</span>
+          </h1>
 
-          <a
-            href="#services"
-            className="rounded-full border border-white/10 px-7 py-3 font-semibold text-stone-100 transition hover:bg-white/5"
-          >
-            View services
-          </a>
+          <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-[#D8D1C3] md:text-lg">
+            NAVACO SARL supports financial institutions and regulated
+            organisations in strengthening governance, operational resilience,
+            cybersecurity, regulatory readiness and responsible AI adoption.
+          </p>
+
+          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="mailto:navacolu@gmail.com"
+              className="rounded-full bg-[#D6C39A] px-7 py-3 font-semibold text-[#080706] transition hover:bg-[#E8D7B0]"
+            >
+              Start a conversation
+            </a>
+
+            <a
+              href="#services"
+              className="rounded-full border border-[#D6C39A]/30 px-7 py-3 font-semibold text-[#F7F3EA] transition hover:bg-white/5"
+            >
+              View services
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="services" className="mx-auto max-w-6xl px-6 py-12">
+      <section id="services" className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-white/5 bg-white/[0.03] p-8"
+              className="rounded-2xl border border-[#D6C39A]/10 bg-white/[0.035] p-8 shadow-2xl shadow-black/20"
             >
-              <h2 className="text-xl font-semibold text-amber-200">
+              <h2 className="text-xl font-semibold text-[#D6C39A]">
                 {service.title}
               </h2>
-              <p className="mt-4 leading-7 text-stone-400">
+              <p className="mt-4 leading-7 text-[#BEB6A8]">
                 {service.text}
               </p>
             </div>
@@ -91,40 +94,40 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-orange-300/10 bg-gradient-to-br from-white/[0.04] to-orange-300/5 p-8 md:p-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
+        <div className="rounded-3xl border border-[#C89B6D]/15 bg-gradient-to-br from-white/[0.045] to-[#C89B6D]/5 p-8 md:p-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#C89B6D]">
             How Navaco helps
           </p>
 
           <div className="mt-8 grid gap-8 md:grid-cols-3">
             <div>
-              <p className="text-3xl font-semibold text-stone-100">01</p>
-              <h3 className="mt-3 font-semibold text-amber-200">
+              <p className="text-3xl font-semibold text-[#F7F3EA]">01</p>
+              <h3 className="mt-3 font-semibold text-[#D6C39A]">
                 Assess
               </h3>
-              <p className="mt-3 text-stone-400">
+              <p className="mt-3 text-[#BEB6A8]">
                 Understand current governance structures, technology landscape,
                 risks and business objectives.
               </p>
             </div>
 
             <div>
-              <p className="text-3xl font-semibold text-stone-100">02</p>
-              <h3 className="mt-3 font-semibold text-amber-200">
+              <p className="text-3xl font-semibold text-[#F7F3EA]">02</p>
+              <h3 className="mt-3 font-semibold text-[#D6C39A]">
                 Design
               </h3>
-              <p className="mt-3 text-stone-400">
+              <p className="mt-3 text-[#BEB6A8]">
                 Define practical governance models, transformation roadmaps,
                 resilience improvements and AI opportunities.
               </p>
             </div>
 
             <div>
-              <p className="text-3xl font-semibold text-stone-100">03</p>
-              <h3 className="mt-3 font-semibold text-amber-200">
+              <p className="text-3xl font-semibold text-[#F7F3EA]">03</p>
+              <h3 className="mt-3 font-semibold text-[#D6C39A]">
                 Deliver
               </h3>
-              <p className="mt-3 text-stone-400">
+              <p className="mt-3 text-[#BEB6A8]">
                 Support implementation, stakeholder alignment, reporting and
                 sustainable adoption across the organisation.
               </p>
@@ -136,15 +139,15 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D6C39A]">
               About
             </p>
-            <h2 className="mt-4 text-3xl font-semibold">
+            <h2 className="mt-4 text-3xl font-semibold text-[#F7F3EA]">
               Independent consulting focused on practical outcomes.
             </h2>
           </div>
 
-          <p className="leading-8 text-stone-300">
+          <p className="leading-8 text-[#D8D1C3]">
             NAVACO SARL provides advisory and consulting services in digital
             transformation, governance, cybersecurity, operational resilience
             and artificial intelligence. We help organisations translate
@@ -155,12 +158,12 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl bg-amber-200 p-8 text-center text-stone-950 md:p-12">
+        <div className="rounded-3xl border border-[#D6C39A]/20 bg-[#D6C39A] p-8 text-center text-[#080706] md:p-12">
           <h2 className="text-3xl font-semibold">
             Let's discuss your transformation challenges.
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-stone-800">
+          <p className="mx-auto mt-4 max-w-2xl text-[#302A20]">
             Whether you are preparing for DORA, improving governance, exploring
             AI opportunities or driving a transformation initiative, NAVACO can
             help you move from strategy to execution.
@@ -168,15 +171,15 @@ export default function Home() {
 
           <a
             href="mailto:navacolu@gmail.com"
-            className="mt-8 inline-block rounded-full bg-stone-950 px-8 py-3 font-semibold text-white transition hover:bg-stone-800"
+            className="mt-8 inline-block rounded-full bg-[#080706] px-8 py-3 font-semibold text-[#F7F3EA] transition hover:bg-[#17130F]"
           >
             Contact NAVACO
           </a>
         </div>
       </section>
 
-      <footer className="border-t border-white/5 px-6 py-8">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-stone-500 md:flex-row md:items-center md:justify-between">
+      <footer className="border-t border-[#D6C39A]/10 px-6 py-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-[#8F8678] md:flex-row md:items-center md:justify-between">
           <p>© 2026 NAVACO SARL. All rights reserved.</p>
           <p>Luxembourg · www.navaco.lu · navacolu@gmail.com</p>
         </div>
