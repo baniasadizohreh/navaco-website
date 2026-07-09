@@ -10,7 +10,7 @@ export default function ZehnPage() {
 
         <section className="py-16 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#D6C39A]">
-            NAVACO SARL presents
+            Transforming Enterprise Knowledge into Trusted Operational Intelligence.
           </p>
 
           <h1 className="mt-6 text-5xl font-semibold md:text-7xl">
