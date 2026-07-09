@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="relative min-h-[95vh] overflow-hidden">
         <Image
-          src="/navaco-banner.png"
+          src="/ZEHN.png"
           alt="ZEHN AI governance background"
           fill
           priority
