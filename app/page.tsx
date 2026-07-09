@@ -22,19 +22,12 @@ export default function Home() {
       <header className="absolute left-0 right-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
           <a href="/" className="flex items-center gap-4">
-            <Image
-              src="/ZEHN.png"
-              alt="ZEHN Logo"
-              width={90}
-              height={90}
-              priority
-              className="h-auto w-auto"
-            />
+            <p className="text-xs uppercase tracking-[0.3em] text-[#D6C39A]">
+                ZEHN
+              </p>
 
             <div className="hidden md:block leading-tight">
-              <p className="text-xs uppercase tracking-[0.3em] text-[#D6C39A]">
-                A NAVACO Venture
-              </p>
+              
               <p className="text-sm font-semibold text-white">
                 Powered by NAVACO SARL
               </p>
