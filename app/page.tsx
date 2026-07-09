@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const capabilities = [
   {
@@ -98,6 +99,14 @@ export default function Home() {
               >
                 Discover ZEHN
               </a>
+
+              <Link
+                href="/zehn"
+                className="rounded-full border border-[#D6C39A]/30 bg-black/20 px-7 py-3 font-semibold text-[#F7F3EA] backdrop-blur-md transition hover:bg-[#D6C39A] hover:text-[#080706]"
+              >
+                ▶ Watch Our 45s Pitch
+              </Link>
+
             </div>
           </div>
         </div>
