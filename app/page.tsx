@@ -38,7 +38,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#080706] text-[#F7F3EA]">
       <header className="absolute left-0 right-0 top-0 z-30">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
+
           {/* Logo */}
           <a href="/" className="flex items-center gap-4">
             <Image
@@ -60,12 +61,14 @@ export default function Home() {
             </div>
           </a>
 
+          {/* Contact */}
           <a
             href="mailto:navacolu@gmail.com"
             className="rounded-full border border-[#D6C39A]/40 bg-black/25 px-6 py-2 text-sm text-[#D6C39A] backdrop-blur-md transition hover:bg-[#D6C39A] hover:text-[#080706]"
           >
             Contact
           </a>
+
         </div>
       </header>
 
@@ -78,7 +81,7 @@ export default function Home() {
         <div className="relative z-10 flex min-h-[95vh] items-center justify-center px-6 pt-24 text-center">
           <div className="mx-auto max-w-5xl">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#D6C39A]">
-              A new idea by NAVACO SARL
+              A new born company in collaboration with NAVACO SARL
             </p>
 
             <h1 className="mx-auto max-w-5xl text-5xl font-semibold leading-tight text-[#F7F3EA] md:text-7xl">
