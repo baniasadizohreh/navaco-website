@@ -1,0 +1,6 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="48" rx="6" fill="white"/>
+  <text x="14" y="31" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="black">NAVACO</text>
+  <line x1="116" y1="14" x2="116" y2="34" stroke="black" stroke-width="2"/>
+  <text x="126" y="29" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" fill="black">SARL</text>
+</svg>
