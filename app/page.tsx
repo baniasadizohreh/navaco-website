@@ -39,8 +39,25 @@ export default function Home() {
     <main className="min-h-screen bg-[#080706] text-[#F7F3EA]">
       <header className="absolute left-0 right-0 top-0 z-30">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-          <a href="/" className="text-sm font-semibold tracking-[0.3em] text-[#D6C39A]">
-            NAVACO
+          {/* Logo */}
+          <a href="/" className="flex items-center gap-4">
+            <Image
+              src="/ZEHN.png"
+              alt="ZEHN Logo"
+              width={220}
+              height={70}
+              priority
+              className="h-auto w-auto"
+            />
+
+            <div className="hidden md:block leading-tight">
+              <p className="text-xs uppercase tracking-[0.3em] text-[#D6C39A]">
+                Powered by
+              </p>
+              <p className="text-sm font-semibold text-white">
+                NAVACO SARL
+              </p>
+            </div>
           </a>
 
           <a
@@ -53,13 +70,7 @@ export default function Home() {
       </header>
 
       <section className="relative min-h-[95vh] overflow-hidden">
-        <Image
-          src="/ZEHN.png"
-          alt="ZEHN AI governance background"
-          fill
-          priority
-          className="object-cover object-center"
-        />
+
 
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-b from-transparent via-[#080706]/80 to-[#080706]" />
