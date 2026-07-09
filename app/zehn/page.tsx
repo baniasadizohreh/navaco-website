@@ -26,7 +26,7 @@ export default function ZehnPage() {
               controls
               playsInline
               preload="metadata"
-              poster="/navaco-banner.png"
+              poster="/zehn.png"
               className="w-full"
             >
               <source src="/ZEHN-Fit4Start-Pitch.mp4" type="video/mp4" />
